@@ -1,0 +1,73 @@
+.promo
+  padding-top: 32px
+  padding-bottom: 143px
+  position: relative
+  width: 100vw
+  // height: 100vh
+  background: url('../img/background.jpg') center no-repeat
+  background-size: cover
+  &::before
+    position: absolute
+    content: ''
+    // width: 100%
+    height: 100%
+    width: 870px
+    max-height: 760px
+    top: 260px
+    right: 0
+    background: url('../img/woman.png') center no-repeat
+    background-size: contain
+  &__wrap
+    margin-top: 106px
+  &__title
+    margin-bottom: 58px
+    font-family: 'Museo Sans Light', sans-serif
+    font-weight: 300
+    font-size: 48px
+  &__list
+    margin-bottom: 60px
+    font-family: 'Museo Sans Light', sans-serif
+    font-size: 18px
+    letter-spacing: 0.45px
+    &-item
+      margin:
+        left: 30px
+        bottom: 20px
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        width: 7px
+        height: 7px
+        top: 50%
+        left: -27px
+        transform: translateY(-50%)
+        background-color: #ef9499
+        border: 4px solid #f7f7fb
+        border-radius: 50%
+        box-shadow: 0 1px 13px rgba(239, 148, 153, 0.38)
+      &:last-child
+        margin-bottom: 0
+  &__button
+    padding: 26px 141px 24px 31px
+    position: relative
+    font-family: "Museo Sans Bold"
+    font-size: 14px
+    text-transform: uppercase
+    letter-spacing: 1.68px
+    color: $button-alt-text-color
+    border-radius: 43px
+    background-image: linear-gradient(to top, $second-gradient-color 0%, $second-gradient-color 98%, $first-gradient-color 100%)
+    text-shadow: 0 1px 5px rgba(210, 110, 116, 0.49)
+    &::after
+      position: absolute
+      content: ''
+      width: 100%
+      height: 100%
+      max-width: 209px
+      max-height: 70px
+      top: 50%
+      right: -70px
+      transform: translateY(-50%)
+      background: url('../img/button-leaves.png') center no-repeat
+      background-size: contain
