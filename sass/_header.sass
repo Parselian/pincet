@@ -1,4 +1,5 @@
 .header
+  padding-top: 30px
   &__wrap, &__logo, &__contacts, &__phone, &__worktime
     display: flex
     align-items: center
@@ -7,14 +8,17 @@
     justify-content: space-between
   &__logo
     font-family: 'Museo Sans Light', sans-serif
-    font-size: 14px
+    font-size: .7vw
     letter-spacing: 0.7px
     &-img
-      margin-right: 44px
+      margin-right: 2.2vw
+      width: 17vw
+      &_mobile
+        display: none
   &__contacts
     justify-content: space-between
     &-col
-      margin-right: 64px
+      margin-right: 3.3vw
       display: flex
       align-items: center
       &:nth-child(2)
@@ -24,48 +28,43 @@
       margin-right: 12px
       padding: 10px
       position: relative
-      width: 15px
-      height: 15px
-      background-color: $button-alt-text-color
+      width: 16px
+      height: 14px
+      fill: #ee858c
+      background-color: #ffffff
       border-radius: 30px
       box-shadow: 0 3px 20px rgba(68, 68, 68, 0.11)
-      &::after
-        position: absolute
-        content: ''
-        width: 15px
-        height: 15px
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
     &-info
-      line-height: 18px
+      font-size: 0.8vw
       .line_break
         margin-bottom: 4px
     &-button
-      padding: 21px 26px
+      padding: 1.1vw 1.4vw
       display: flex
       align-items: center
       font-family: "Museo Sans Medium", sans-serif
-      font-size: 15px
-      line-height: 24px
+      font-size: .75vw
       letter-spacing: 0.75px
       color: $button-text-color
       background-color: #fefcfb
       border-radius: 80px
       box-shadow: 0px 3px 1px 0px rgba(235,234,234,1)
-      img
+      svg
         margin-right: 10px
+        width: 20px
+        height: 20px
+        fill: #ee858c
   &__location
     &-icon
-      margin-right: 23px
-      width: 78px
-      height: 78px
+      margin-right: 1.4vw
+      width: 3.9vw
+      height: 3.9vw
     &-link
       margin-top: 10px
       position: relative
       display: inline-block
       font-family: 'Museo Sans Bold', sans-serif
-      font-size: 12px
+      font-size: .6vw
       text-transform: uppercase
       color: $accent-color
       &::after
@@ -81,11 +80,11 @@
     &-text
       margin:
         left: 15px
-        bottom: 10px
+        bottom: 0.3vw
       position: relative
       font-family: 'Museo Sans Medium', sans-serif
       letter-spacing: 0.7px
-      font-size: 12px
+      font-size: 0.6vw
       &::before
         position: absolute
         content: ''
@@ -98,7 +97,7 @@
         border-radius: 3px
         box-shadow: 0 0 7px rgba(79, 160, 55, 0.61)
     &-link
-      font-size: 24px
+      font-size: 1.2vw
       color: $main-text-color
       letter-spacing: 0.6px
   &__menu
@@ -125,9 +124,12 @@
       z-index: 0
     &-item
       font-family: 'Museo Sans Light', sans-serif
-      font-size: 15px
+      font-size: .8vw
       letter-spacing: 0.75px
       color: $main-text-color
       cursor: pointer
+      transition: .3s
+      &_active
+        font-family: 'Museo Sans Bold', sans-serif
       &:hover
-        font-weight: 700
+        color: $accent-color 

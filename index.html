@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Студия депиляции | Пинцет</title>
+  <title>Студия депиляции | Pincet</title>
 </head>
 <body>
 
@@ -16,6 +16,7 @@
       <div class="header__wrap container container_big">
         <div class="header__logo">
           <img src="./img/logo.png" alt="логотип" class="header__logo-img">
+          <img src="./img/logo-mobile.png" alt="логотип" class="header__logo-img_mobile">
           <div class="header__logo-text">
             Студия депиляции и
             <span class="line_break">массажный кабинет</span>
@@ -47,7 +48,9 @@
 
           <div class="header__contacts-col">
             <div class="header__phone">
-              <img src="./img/icon-phone.png" alt="тел." class="header__contacts-icon">
+              <svg class="header__contacts-icon">
+                <use xlink:href="./sprites/sprite.svg#phone"></use>
+              </svg>
               <div class="header__contacts-info">
                 <div class="header__phone-text header__contacts-text">
                   Звоните, мы сейчас работаем
@@ -61,9 +64,10 @@
               <!-- /.header__contacts-info -->
             </div>
             <!-- /.header__phone -->
-
             <div class="header__worktime header__contacts-info">
-              <img src="./img/icon-clock.png" alt="часы" class="header__contacts-icon">
+              <svg class="header__contacts-icon">
+                <use xlink:href="./sprites/sprite.svg#clock"></use>
+              </svg>
               <div class="header__contacts-text">
                 Пн-Вс <span class="text_bold">9:00-21:00</span> 
               </div>
@@ -74,7 +78,9 @@
           <!-- /.header__contacts-col -->
 
           <button type="submit" class="header__contacts-button">
-            <img src="./img/calendar.png" alt="календарь" class="button__icon">
+            <svg class="button-icon">
+              <use xlink:href="./sprites/sprite.svg#calendar"></use>
+            </svg>
             Записаться онлайн
           </button> 
           <!-- /.header__contacts-button -->
@@ -84,7 +90,7 @@
       <!-- /.container container_big -->
 
       <nav class="header__menu container container_big">
-        <a href="#" class="header__menu-item">
+        <a href="#" class="header__menu-item header__menu-item_active">
           Главная
         </a>
         <!-- /.header__menu-item -->
@@ -147,12 +153,36 @@
       </ul>
       <!-- /.promo__list -->
       <button class="promo__button">
-        <span class="line_break">Получить карту</span> 
-        клиента бесплатно
+        <div class="promo__button-content">
+          <span class="line_break">Получить карту</span> 
+          клиента бесплатно
+        </div>
       </button>
       <!-- /.promo__button -->
+      
+      <div class="promo__card">
+        <img src="./img/client-card.png" alt="карта клиента" class="promo__card-img">
+
+        <div class="promo__card-btn">
+        </div>
+        <!-- /.promo__card-btn -->
+        <div class="promo__card-text">
+          <div class="promo__card-mask"></div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+        </div>
+        <!-- /.promo__card-info -->
+      </div>
+      <!-- /.promo__card -->
     </div>
     <!-- /.promo__wrap container container_def -->
+
+    <div class="promo__scroll">
+      <svg class="promo__scroll-btn">
+        <use xlink:href="./sprites/sprite.svg#arrow"></use>
+      </svg>
+    </div>
+
+    <div class="promo__edging"></div>
   </section>
   <!-- /.promo -->
   

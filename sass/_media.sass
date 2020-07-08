@@ -1,0 +1,232 @@
+@media (max-width: 1600px)
+  .promo
+    &__button
+      &-content
+        &::after
+          right: -60%
+    &__card
+      width: 600px
+      &-btn
+        width: 65px
+        height: 65px
+      &-text
+        font-size: 0.75vw
+        width: 115px
+        height: 120px
+        top: 3%
+      &-mask
+        width: 170px
+    &__scroll
+      &-btn
+        bottom: 5.6%
+      &::before
+        bottom: 2.5vw
+      &::after
+        bottom: 1.2vw
+
+@media (max-width: 1300px)
+  .header
+    &__contacts
+      &-icon
+        padding: 8px
+        width: 14px
+        height: 12px
+  .promo
+    &__card
+      top: 44%
+      &-text
+        font-size: 0.9vw
+    &__scroll
+      &-btn
+        bottom: 6.8%
+      &::before
+        bottom: 3.2vw
+      &::after
+        bottom: 1.5vw
+
+@media (max-width: 1100px)
+  .promo
+    &__card
+      width: 500px
+      &-btn
+        width: 55px
+        height: 55px
+        top: 32%
+        left: 35%
+      &-text
+        width: 105px
+        height: 110px
+        top: -6%
+        font-size: 1vw
+      &-mask
+        width: 160px
+    &__scroll
+      &-btn
+        bottom: 7.5%
+      &::before
+        bottom: 3.5vw
+      &::after
+        bottom: 1.5vw
+
+@media (max-width: 992px)
+  .container
+    max-width: 740px
+  .header
+    &__logo
+      &-img
+        width: 140px
+      &-text
+        display: none
+    &__location
+      &-icon
+        margin-right: 12px
+        width: 44px
+        height: 44px
+      &-link
+        font-size: 10px
+    &__contacts
+      &-icon
+        width: 20px
+        height: 18px
+        padding: 12px
+      &-info
+        font-size: 14px
+      &-text
+        font-size: 12px
+    &__phone
+      &-text
+        font-size: 10px
+      &-link
+        font-size: 18px
+    &__menu
+      display: none
+    &__worktime
+      display: none
+    &__contacts
+      &-button
+        display: none
+  .promo
+    padding-top: 0
+    padding-bottom: 143px
+    &::before
+      height: 430px
+      width: 480px
+    &__wrap
+      margin-top: 60px
+    &__title
+      margin-bottom: 30px
+      font-size: 36px
+    &__list
+      margin-bottom: 40px
+      font-size: 16px
+      &-item
+        margin-bottom: 10px
+    &__button
+      &-content
+        padding: 20px 50px
+        font-size: 14px
+        &::after
+          display: none
+    &__card
+      top: 85%
+      left: 15%
+      &-img
+        display: none
+      &-text
+        top: -110px
+        font-size: 11px
+    &__scroll
+      &-btn
+        bottom: 6.5%
+      &:before
+        bottom: 35px
+      &:after
+        bottom: 15px
+
+@media (max-width: 768px)
+  .container
+    max-width: 540px
+  .header
+    &__wrap
+      flex-direction: column
+    &__logo
+      margin-bottom: 20px
+  .promo
+    padding-bottom: 180px
+    &::before
+      display: none
+    &__title
+      font-size: 32px
+    &__card
+      left: 20%
+    &__scroll
+      &-btn
+        bottom: 6%
+      &::before
+        bottom: 38px
+      &::after
+        bottom: 17px
+
+@media (max-width: 576px)
+  .container
+    width: 90%
+  .header
+    &__phone
+      &-text
+        letter-spacing: 0.3px
+  .promo
+    &__title
+      width: 100%
+      max-width: 350px
+    &__list
+      max-width: 370px
+    &__button
+      &-content
+        padding: 15px 30px
+        font-size: 12px
+    &__card
+      width: 600px
+      top: 88%
+      left: 3%
+    &__scroll
+      &::before
+        bottom: 41px
+      &::after
+        bottom: 20px
+
+@media (max-width: 480px)
+  .header
+    &__wrap
+      flex-direction: row
+    &__logo
+      &-img
+        display: none
+        &_mobile
+          display: block
+          height: 100px
+    &__contacts
+      flex-direction: column
+      align-items: flex-start
+      &-col
+        margin-right: 0
+    &__location
+      margin-bottom: 15px
+      order: 1
+
+@media (max-width: 400px)
+  .header
+    &__contacts
+      &-text
+        font-size: 10px
+    &__phone
+      &-text
+        letter-spacing: 0
+        font-size: 9px
+      &-link
+        font-size: 14px
+  .promo
+    &__title
+      max-width: 100%
+      font-size: 26px
+    &__list
+      font-size: 14px
