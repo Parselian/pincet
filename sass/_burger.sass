@@ -9,6 +9,10 @@
   background: url('../img/background.jpg') center no-repeat
   background-size: cover
   z-index: 1000000
+  transition: right .5s
+  will-change: right
+  &_show
+    right: 0
   &__button
     position: absolute
     right: calc(100% + 20px)
@@ -18,6 +22,10 @@
     fill: $accent-color
     transform: rotate(-180deg) translateY(-50%)
     z-index: 999999999
+    transition: .3s
+    &_toggled
+      transform: rotate(-180deg) translateY(-50%) scale(-1,1)
+      right: calc(100% - 40px)
   &__menu
     position: absolute
     top: 50%

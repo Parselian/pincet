@@ -69,6 +69,8 @@
         bottom: 1.5vw
 
 @media (max-width: 992px)
+  .burger
+    display: block
   .container
     max-width: 740px
   .header
@@ -105,9 +107,14 @@
     &__contacts
       &-button
         display: none
+        &:hover
+          background-color: #fff
+          color: $main-text-color
+          svg
+            fill: #ee858c
   .promo
     padding-top: 0
-    padding-bottom: 143px
+    padding-bottom: 203px
     &::before
       height: 430px
       width: 480px
@@ -139,9 +146,9 @@
       &-btn
         bottom: 6.5%
       &:before
-        bottom: 35px
+        bottom: 40px
       &:after
-        bottom: 15px
+        bottom: 20px
   .burger
     &__request
       &-button
@@ -150,8 +157,6 @@
         font-size: 14px
 
 @media (max-width: 768px)
-  .burger
-    display: block
   .container
     max-width: 540px
   .header
